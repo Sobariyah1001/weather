@@ -1,0 +1,60 @@
+body {
+  font-family: 'Niramit';
+  color: white;
+  text-align: center;
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007acc;
+}
+
+button:active {
+  background-color: #0055a0;
+}
+
+#weather {
+  margin-top: 20px;
+}
+  /* Media query untuk tampilan smartphone */
+  @media (max-width: 768px) {
+    input, button {
+      max-width: 60%; /* Menggunakan lebar penuh pada tampilan smartphone */
+    }
+  }
+label{
+    font-size: 24px;
+}  
